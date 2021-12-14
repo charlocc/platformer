@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <link href= "trapgame.css" rel= "stylesheet" type="text/css">
+    <title>Platformer Game</title>
+
+</head>
+
+<body>
+    <canvas>
+
+    </canvas>
+    
+    <script type = "text/javascript">
+        let sources = ["controller-", "display-", "game-", "engine-", "main-"];
+        let part = String(window.location).split("?")[1];
+
+        switch(part){
+            case "01" : case "02": break;
+            default: part = "01";
+        }
+
+        for (let i=0; i < sources.length; i++) {
+            let script = document.createElement("script");
+            script.setAttribute("type", "text/javascript");
+            script.setAttribute("src", String(part + "/" + sources[i] + part + ".js"));
+            document.head.appendChild(script);
+        }
+
+    </script>
+
+</body>
+
+</html>
