@@ -1,17 +1,18 @@
-// This is a fixed time step game loop. It will ensure that the game state is 
-// updated at the same rate across different devices (important for uniform gameplay)
+// Code frome tutorial by Frank Arendpoth (https://youtu.be/w-OKdSHRlfA)
+
+// This is a fixed time step game loop. (important for uniform gameplay)
+// It will ensure that the game will update and draw at a fixed rate across different devices
 
 const Engine = function(time_step, update, render) {
-    // Reference to the AFR
+
+    this.accumulated_time = 0;
     this.animation_frame_request = undefined, 
-    // Most recent timestamp of loop execution
-    this.time = undefined,
-    // 1000/30 = 30 frames per second
-    this.time_step = time_step,
+    this.time = undefined, // Most recent timestamp of loop execution
+    this.time_step = time_step, // 1000/30 = 30 frames per second
 
     // Whether or not the update function has been called since last cycle
     this.updated = false;
-
+    // render and update functions defined in main file 
     this.update = update;
     this.render = render;
 
@@ -45,7 +46,7 @@ const Engine = function(time_step, update, render) {
         this.animation_frame_request = window.requestAnimationFrame(this.handleRun);
 
     };
-
+    // use an arrow function to make sure the "this" refers to the engine object and not the window
     this.handleRun = (time_step) => {
         this.run(time_step);
     };
