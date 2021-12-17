@@ -16,7 +16,7 @@ const Display = function (canvas) {
 
         for (let i = map.length - 1; i > -1; --i) {
             // loop through every value in the map  
-            let value = map[i]; 
+            let value = map[i]-1; 
             // value is the length of the map (128px)
             let source_x = (value % this.tile_sheet.columns) * this.tile_sheet.tile_size;
             let source_y = Math.floor(value / this.tile_sheet.columns) * this.tile_sheet.tile_size;
