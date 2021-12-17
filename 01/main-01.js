@@ -60,7 +60,7 @@ window.addEventListener("load",function(event) {
     }, {once : true});
 
     // load the display image first and then start the engine
-    display.tile_sheet.image.src= "rabbit-trap.png";
+    display.tile_sheet.image.src= "newtileset.png";
 
     window.addEventListener("keydown", keyDownUp);
     window.addEventListener("keyup", keyDownUp);

@@ -7,8 +7,8 @@ const Display = function (canvas) {
         this.context = canvas.getContext("2d");
 
     // Defines container for sprite sheet image
-    // passing size of the tiles (16) and number of columns (8)
-    this.tile_sheet = new Display.TileSheet(16, 8);
+    // original: passing size of the tiles (16) and number of columns (8)
+    this.tile_sheet = new Display.TileSheet(32, 18);
 
 
     /* This function draws the map to the buffer. */
