@@ -309,6 +309,7 @@ Game.World.Player.prototype = {
 
   }
 
+  
 };
 
 Object.assign(Game.World.Player.prototype, Game.World.Object.prototype);
