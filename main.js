@@ -65,6 +65,9 @@ window.addEventListener("load",function(event) {
     window.addEventListener("keydown", keyDownUp);
     window.addEventListener("keyup", keyDownUp);
     window.addEventListener("resize", resize);
+    document.getElementById("upBtn").addEventListener("click", Game.jump);
+    document.getElementById("rightBtn").addEventListener("click", Game.moveRight);
+    document.getElementById("leftBtn").addEventListener("click", Game.moveLeft);
 
 
 
