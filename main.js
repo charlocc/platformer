@@ -1,4 +1,4 @@
-// Code frome tutorial by Frank Arendpoth (https://youtu.be/w-OKdSHRlfA)
+// Main code frome tutorial by Frank Arendpoth (https://youtu.be/w-OKdSHRlfA)
 
 window.addEventListener("load",function(event) {
    

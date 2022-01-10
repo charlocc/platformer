@@ -1,4 +1,4 @@
-// Code from tutorial by Frank Arendpoth (https://youtu.be/w-OKdSHRlfA)
+// Controller code from tutorial by Frank Arendpoth (https://youtu.be/w-OKdSHRlfA)
 
 const Controller = function () {
 

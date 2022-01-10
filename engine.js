@@ -1,4 +1,4 @@
-// Code frome tutorial by Frank Arendpoth (https://youtu.be/w-OKdSHRlfA)
+// Engine code frome tutorial by Frank Arendpoth (https://youtu.be/w-OKdSHRlfA)
 
 // This is a fixed time step game loop. (important for uniform gameplay)
 // It will ensure that the game will update and draw at a fixed rate across different devices

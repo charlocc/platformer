@@ -1,4 +1,4 @@
-// Code frome tutorial by Frank Arendpoth (https://youtu.be/w-OKdSHRlfA)
+// Object Collision detection code frome tutorial by Frank Arendpoth (https://youtu.be/w-OKdSHRlfA)
 
 const Game = function () {
 
